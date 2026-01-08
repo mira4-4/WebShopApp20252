@@ -1,12 +1,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-using WebbShopApp.Core.Contracts;
-using WebbShopApp.Core.Services;
-
+using WebShopApp.Core.Contracts;
+using WebShopApp.Core.Services;
 using WebShopApp.Infrastructure.Data;
 using WebShopApp.Infrastructure.Data.Domain;
-using WebShopApp.Infrastructure.Data.infrastructure;
+using WebShopApp.Infrastructure.Data.Infrastructure;
 
 namespace WebShopApp
 {
@@ -32,18 +31,18 @@ namespace WebShopApp
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequiredLength = 5;
             })
-
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddTransient<ICategoryService, CategoryService>();
             builder.Services.AddTransient<IBrandService, BrandService>();
+            builder.Services.AddTransient<IProductService, ProductService>();
 
             var app = builder.Build();
 
             app.PrepareDatabase();
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -69,8 +68,6 @@ namespace WebShopApp
             app.MapRazorPages();
 
             app.Run();
-
-
         }
     }
 }

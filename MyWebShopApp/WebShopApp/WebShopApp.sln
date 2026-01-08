@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp", "WebShopApp.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.Infrastructure", "..\WebShopApp.Infrastructure\WebShopApp.Infrastructure.csproj", "{BD285D05-07EC-4B99-8C26-3B1E818C5AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebbShopApp.Core", "..\WebbShopApp.Core\WebbShopApp.Core.csproj", "{89B97113-BBDF-46EC-A6D9-9B050CEE8681}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.Core", "..\WebShopApp.Core\WebShopApp.Core.csproj", "{F260B3B7-4FF5-4D2A-BFEA-F62837069635}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{BD285D05-07EC-4B99-8C26-3B1E818C5AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD285D05-07EC-4B99-8C26-3B1E818C5AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD285D05-07EC-4B99-8C26-3B1E818C5AEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{89B97113-BBDF-46EC-A6D9-9B050CEE8681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89B97113-BBDF-46EC-A6D9-9B050CEE8681}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89B97113-BBDF-46EC-A6D9-9B050CEE8681}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89B97113-BBDF-46EC-A6D9-9B050CEE8681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F260B3B7-4FF5-4D2A-BFEA-F62837069635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F260B3B7-4FF5-4D2A-BFEA-F62837069635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F260B3B7-4FF5-4D2A-BFEA-F62837069635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F260B3B7-4FF5-4D2A-BFEA-F62837069635}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

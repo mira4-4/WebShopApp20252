@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using WebbShopApp.Core.Contracts;
-
+using WebShopApp.Core.Contracts;
 using WebShopApp.Infrastructure.Data;
 using WebShopApp.Infrastructure.Data.Domain;
 
-namespace WebbShopApp.Core.Services
+namespace WebShopApp.Core.Services
 {
-
     public class CategoryService : ICategoryService
     {
         private readonly ApplicationDbContext _context;
@@ -39,5 +37,4 @@ namespace WebbShopApp.Core.Services
                 .ToList();
         }
     }
-
 }
